@@ -8,9 +8,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet"/>
 </head>
 <body>
-
   <canvas id="starfield"></canvas>
   <canvas id="witchcanvas"></canvas>
+
+  <div class="sky" id="sky"></div>
 
   <nav class="nav">
     <div class="logo">Luna de Octubre</div>
@@ -38,66 +39,84 @@
   </div>
 
   <div class="pgrid" id="pgrid">
+
     <div class="pcard" data-cat="muneca" data-name="Muñeca Brujita" data-emoji="🧙‍♀️" data-desc="Muñeca de tela rellena, vestidita de brujita con capita y sombrero. Bordada a mano con mucho cariño." data-price="$280">
-      <span class="pbadge pop">Popular</span><span class="pcard-ico">🧙‍♀️</span>
+      <span class="pbadge pop">Popular</span>
+      <span class="pcard-ico">🧙‍♀️</span>
       <div class="pcard-name">Muñeca Brujita</div>
       <div class="pcard-desc">Tela de algodón, bordada a mano.</div>
       <div class="pcard-price">$280 mxn</div>
     </div>
+
     <div class="pcard" data-cat="muneca" data-name="Muñeca de Luna" data-emoji="🌙" data-desc="Muñeca con vestido estrellado y luna bordada en el pecho. Cabello de estambre y ojos de botón." data-price="$260">
-      <span class="pbadge new">Nueva</span><span class="pcard-ico">🌙</span>
+      <span class="pbadge new">Nueva</span>
+      <span class="pcard-ico">🌙</span>
       <div class="pcard-name">Muñeca de Luna</div>
       <div class="pcard-desc">Vestido estrellado, cabello de estambre.</div>
       <div class="pcard-price">$260 mxn</div>
     </div>
+
     <div class="pcard" data-cat="muneca" data-name="Muñeca Gatita" data-emoji="🐱" data-desc="Gatita de tela con orejas bordadas, lacito y colita de estambre. Suave y adorable." data-price="$240">
       <span class="pcard-ico">🐱</span>
       <div class="pcard-name">Muñeca Gatita</div>
       <div class="pcard-desc">Orejas bordadas, lacito y colita.</div>
       <div class="pcard-price">$240 mxn</div>
     </div>
+
     <div class="pcard" data-cat="bolsa" data-name="Bolsa Tote Lunita" data-emoji="🌛" data-desc="Bolsa tote de tela de manta con luna creciente bordada a mano. Resistente y única." data-price="$180">
-      <span class="pbadge pop">Popular</span><span class="pcard-ico">🌛</span>
+      <span class="pbadge pop">Popular</span>
+      <span class="pcard-ico">🌛</span>
       <div class="pcard-name">Bolsa Tote Lunita</div>
       <div class="pcard-desc">Tela de manta, bordado artesanal.</div>
       <div class="pcard-price">$180 mxn</div>
     </div>
-    <div class="pcard" data-cat="bolsa" data-name="Bolsa Gatito Negro" data-emoji="🐈‍⬛" data-desc="Bolsa mediana con gatito negro bordado. Perfecta para el uso diario con toque encantado." data-price="$200">
-      <span class="pbadge new">Nueva</span><span class="pcard-ico">🐈‍⬛</span>
+
+    <div class="pcard" data-cat="bolsa" data-name="Bolsa Gatito Negro" data-emoji="🐈‍⬛" data-desc="Bolsa mediana con gatito negro bordado. Perfecta para el uso diario con un toque encantado." data-price="$200">
+      <span class="pbadge new">Nueva</span>
+      <span class="pcard-ico">🐈‍⬛</span>
       <div class="pcard-name">Bolsa Gatito Negro</div>
       <div class="pcard-desc">Gatito bordado, uso diario.</div>
       <div class="pcard-price">$200 mxn</div>
     </div>
+
     <div class="pcard" data-cat="bebe" data-name="Mameluco Estrellitas" data-emoji="⭐" data-desc="Mameluco de tela suave con pequeñas estrellitas bordadas. Tallas 0-3, 3-6 y 6-12 meses." data-price="$320">
       <span class="pcard-ico">⭐</span>
       <div class="pcard-name">Mameluco Estrellitas</div>
       <div class="pcard-desc">Tela suave, tallas 0–12 meses.</div>
       <div class="pcard-price">$320 mxn</div>
     </div>
+
     <div class="pcard" data-cat="bebe" data-name="Set Gorrito y Babero" data-emoji="👶" data-desc="Gorrito y babero a juego con lunita bordada. Ideal como regalo para bebés recién nacidos." data-price="$220">
-      <span class="pbadge pop">Popular</span><span class="pcard-ico">👶</span>
+      <span class="pbadge pop">Popular</span>
+      <span class="pcard-ico">👶</span>
       <div class="pcard-name">Set Gorrito y Babero</div>
       <div class="pcard-desc">Juego a juego, ideal de regalo.</div>
       <div class="pcard-price">$220 mxn</div>
     </div>
+
     <div class="pcard" data-cat="peluche" data-name="Peluche Fantasmita" data-emoji="👻" data-desc="Suave fantasmita de tela rellena, con expresión tierna y capa de tul. ¡Da amor, no miedo!" data-price="$190">
-      <span class="pbadge new">Nueva</span><span class="pcard-ico">👻</span>
+      <span class="pbadge new">Nueva</span>
+      <span class="pcard-ico">👻</span>
       <div class="pcard-name">Peluche Fantasmita</div>
       <div class="pcard-desc">Tela rellena suave, capa de tul.</div>
       <div class="pcard-price">$190 mxn</div>
     </div>
+
     <div class="pcard" data-cat="peluche" data-name="Peluche Gatito Luna" data-emoji="🐾" data-desc="Gatito de tela con lunita bordada en la panza. Relleno de fibra hipoalergénica." data-price="$210">
-      <span class="pbadge pop">Popular</span><span class="pcard-ico">🐾</span>
+      <span class="pbadge pop">Popular</span>
+      <span class="pcard-ico">🐾</span>
       <div class="pcard-name">Peluche Gatito Luna</div>
       <div class="pcard-desc">Fibra hipoalergénica, suave al tacto.</div>
       <div class="pcard-price">$210 mxn</div>
     </div>
-    <div class="pcard" data-cat="especial" data-name="Pedido Personalizado" data-emoji="✨" data-desc="¿Tienes una idea especial? Cuéntame y lo hacemos realidad. Tu diseño único en tela." data-price="Cotizar">
+
+    <div class="pcard" data-cat="especial" data-name="Pedido Personalizado" data-emoji="✨" data-desc="¿Tienes una idea especial? Cuéntame y lo hacemos realidad. Muñecas, bolsas o prendas con tu diseño único." data-price="Cotizar">
       <span class="pcard-ico">✨</span>
       <div class="pcard-name">Pedido Personalizado</div>
       <div class="pcard-desc">Tu idea hecha realidad, a tu medida.</div>
       <div class="pcard-price">Cotizar</div>
     </div>
+
   </div>
 
   <!-- MODAL -->
@@ -106,7 +125,7 @@
       <button class="modal-close" id="modal-close">&#x2715;</button>
       <div class="modal-emoji" id="m-emoji"></div>
       <div class="modal-title" id="m-title"></div>
-      <div class="modal-desc"  id="m-desc"></div>
+      <div class="modal-desc" id="m-desc"></div>
       <div class="modal-price" id="m-price"></div>
       <a class="modal-wa" id="modal-wa" href="#" target="_blank">Pedir por WhatsApp</a>
     </div>
